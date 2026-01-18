@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>task10</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<section class="testimonials">
+  <h2 class="testimonials__title">Test</h2>
+
+  <div class="swiper testimonials__slider">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide testimonial-card">
+          <img src="./картинк11.jpg" alt="картинка" />
+        <h3>Kotik</h3>
+        <div class="stars">★★★★★</div>
+        <p>
+          The interface is clean and modern. Very easy to use and
+          extremely helpful for our team.
+        </p>
+      </div>
+
+      <div class="swiper-slide testimonial-card">
+           <img src="./картинк22.jpg" alt="картинка">
+        <h3>Mizi</h3>
+        <div class="stars">★★★★★</div>
+        <p>
+          Great experience overall. I really like how smooth the
+          navigation feels.
+        </p>
+      </div>
+
+      <div class="swiper-slide testimonial-card">
+          <img src="./картинк33.jpg" alt="картинка">
+        <h3>Ivan</h3>
+        <div class="stars">★★★★★</div>
+        <p>
+          This product helped our business grow faster than expected.
+          Highly recommended.
+        </p>
+      </div>
+
+      <div class="swiper-slide testimonial-card">
+          <img src="./картинк44.jpg" alt="картинка">
+        <h3>Alfedof</h3>
+        <div class="stars">★★★★★</div>
+        <p>
+          Simple, elegant, and effective. Works perfectly on mobile
+          devices.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+  new Swiper('.testimonials__slider', {
+    loop: true,
+    spaceBetween: 24,
+
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
+  });
+</script>
+
+</body>
+</html>
